@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <title>Capital One Bank</title>
+</head>
+<body>
+    <div class="container">
+        <!------First Content------->
+        <div class="sidenav" id="navlinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <div class="header">
+                <img src="logo bank.png" alt="image" width="40%">
+            </div>
+            <div class="lists">
+                    <a href="main.html" class="menuList active">Dashboard</a>
+                    <a href="#" class="menuList">Card Payment</a>
+                    <a href="trans.html" class="menuList">Transaction History</a>
+                    <a href="setting.html" class="menuList">Settings</a>
+                    <a href="index.html" class="menuList">Logout</a>
+            </div>
+        </div>
+         <!------Middle content------->
+        <div class="content">
+            <div class="first-content">    
+                <h1><span>WELCOME, </span>Stimulus Benefit.</h1>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </div>
+            <div class="second-content">
+                <div class="notes">
+                    <h1>$210,596.84</h1>
+                    <h3><u>Available Balance</u> today</h3>
+                </div>
+                
+                <div class="button">
+                    <button type="button" id="button" onclick="openPopup()">Transfer</button>
+                </div>
+            </div>
+            <div class="popup" id="popup">
+                <img src="error.png" alt="thick-mark" class="img">
+                <h2>Declined</h2>
+                <h6>You will have to deposit before Transfer.</h6>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+            <div class="third-content">
+                <h1>Transaction History</h1>
+                <div class="table">
+                    <table>
+                        <tr>
+                            <th>Refrence #</th>
+                            <th>Posted Transaction</th>
+                            <th>Amount($)</th>
+                        </tr>
+                        <tr>
+                            <td>RP04VK8KPL</td>
+                            <td>Purchase CashApp'TRE VISA TRANSFER CA CARD8109</td>
+                            <td><span class="red">-$3,500.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>RP02WETY7U</td>
+                            <td>BANK TRANSFER TO Elizabeth Hill</td>
+                            <td><span class="red">-$65,000.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Tw56373836</td>
+                            <td>Bank Transfer from xxxxxx605 to Account xxxxxx678</td>
+                            <td><span class="red">-$14,500.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>RP03VXH4TH</td>
+                            <td>Direct Deposit of $14,500 to VENMO</td>
+                            <td><span class="red">-$14,500.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Tx45960836</td>
+                            <td>Bank Transfer from xxxxxx605 to Account xxxxxx609</td>
+                            <td><span class="red">-$50,700.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>TP01GTRY7X</td>
+                            <td>DIRECT DEPOSIT OF $31,400 TO Bank Of America</td>
+                            <td><span class="red">-$31,400.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>RP04VK8KPL</td>
+                            <td>Purchase CashApp'TRE VISA TRANSFER CA CARD8109</td>
+                            <td><span class="red">-$20,900.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Tc39785490</td>
+                            <td>Purchase ZELLE'CHA VISA TRANSFER CA CARD8109</td>
+                            <td><span class="red">-$14,509.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Tc46686090</td>
+                            <td>Bank Transfer from xxxxxx605 to Account xxxxxx001</td>
+                            <td><span class="red">-$31,420.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>RP04VK8KPL</td>
+                            <td>Purchase CashApp'TRE VISA TRANSFER CA CARD8109</td>
+                            <td><span class="red">-$14,540.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>RP04VK8KPL</td>
+                            <td>VENMO TRANSFER OF $14,000</td>
+                            <td><span class="red">-$14,000.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Dr45009751</td>
+                            <td>Bank Transfer from xxxxxx605 to Bank of America</td>
+                            <td><span class="red">-$50,290.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>PR32WVTT2U</td>
+                            <td>DIRECT DEPOSIT OF $14,500 TO Venmo Account</td>
+                            <td><span class="red">-$14,500.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Dz30906786</td>
+                            <td>Purchase CashApp'TRE VISA TRANSFER CA CARD8109</td>
+                            <td><span class="red">-$50,000.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>RP04VK8KPL</td>
+                            <td>Purchase CAPITAL-ONE TRANSFER CA CARD8109</td>
+                            <td><span class="red">-$31,500,00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Tw53211187</td>
+                            <td>Bank Transfer from xxxxxx605 to Account xxxxxx234</td>
+                            <td><span class="red">-$14,500.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>RP97VK8KRF</td>
+                            <td>Purchase CashApp'TRE VISA TRANSFER CA CARD8109</td>
+                            <td><span class="red">-$14,500.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>YT05WK8KPU</td>
+                            <td>Purchase VENMO VISA TRANSFER CA CARD8109</td>
+                            <td><span class="red">-$20,000,00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Rv89452846</td>
+                            <td>Purchase VENMO TRANSFER CA CARD8109</td>
+                            <td><span class="red">-$13,500.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>RP45930Ttr</td>
+                            <td>Purchase ZELLE'REA VISA TRANSFER CA CARD8109</td>
+                            <td><span class="red">-$31,500.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>R0TYR44590</td>
+                            <td>Purchase VENMO VISA TRANSFER CA CARD8109</td>
+                            <td><span class="red">-$14,500.00</span></td>
+                        </tr>
+                        <!-- <tr>
+                            <td>Amgen inc</td>
+                            <td>Insurance Paid</td>
+                            <td>13/05/2023</td>
+                            <td><span class="green">+$101,000.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Elzabeth Mary</td>
+                            <td>Income Tax</td>
+                            <td>12/05/2023</td>
+                            <td class="green">+$109,950.00</td>
+                        </tr>
+                        <tr>
+                            <td>Johnson Tyler</td>
+                            <td>Debit</td>
+                            <td>10/05/2023</td>
+                            <td class="red">-$53,500.00</td>
+                        </tr>
+                        <tr>
+                            <td>Robbin Gordon</td>
+                            <td>Payroll and Wages</td>
+                            <td>10/05/2023</td>
+                            <td><span class="red">+$150,000.00</span></td>
+                        </tr> -->
+                        <!-- <tr class="hide">
+                            <td>Brightpoint inc.</td>
+                            <td>Property Tax</td>
+                            <td>17-09-2020</td>
+                            <td><span>+$17,760,000</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Brian Koller</td>
+                            <td>Taxes</td>
+                            <td>30-07-2020</td>
+                            <td class="red">-$1,089,000</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>John coke</td>
+                            <td>Net income tax</td>
+                            <td>05-05-2020</td>
+                            <td><span>+$3,900,000</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Brian Koller</td>
+                            <td>License</td>
+                            <td>17-08-2019</td>
+                            <td class="red">-$5,460,090</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Elizabeth Mary</td>
+                            <td>Product Costs</td>
+                            <td>13-03-2019</td>
+                            <td><span>$2,040,760</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Mary May</td>
+                            <td>Expenses</td>
+                            <td>22-11-2018</td>
+                            <td class="red">-$2,507,400</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Capra Guy</td>
+                            <td>Current Asset</td>
+                            <td>11-04-2018</td>
+                            <td class="green">+$50,600,050</td>
+                        </tr> -->
+                        <!-- <tr class="hide">
+                            <td>Brian Coman</td>
+                            <td>Walmart</td>
+                            <td class="green">Credit</td>
+                            <td><span>$2,500.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Donald Roger</td>
+                            <td>CashApp</td>
+                            <td class="red">Debit</td>
+                            <td class="red">$1,050.00</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Marcus Whiteman</td>
+                            <td>Paypal</td>
+                            <td class="red">Debit</td>
+                            <td class="red">$1,200.00</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Brian Koller</td>
+                            <td>Wells Fago</td>
+                            <td class="green">Credit</td>
+                            <td><span>$10,000.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Robert David</td>
+                            <td>CashApp</td>
+                            <td class="red">Debit</td>
+                            <td class="red">$24,600.00</td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Howrad Jerry</td>
+                            <td>Wells Fago</td>
+                            <td class="green">Credit</td>
+                            <td><span>$1,400.00</span></td>
+                        </tr>
+                        <tr class="hide">
+                            <td>Jackie Larry</td>
+                            <td>CashApp</td>
+                            <td class="red">Debit</td>
+                            <td class="red">$900.00</td>
+                        </tr> -->
+                    </table>
+                </div>        
+            </div>
+                <!-- <div class="button-table">
+                   <button>See More</button> 
+                </div> -->
+            <!-- </div> -->
+        </div>
+         <!------Last end content------->
+        <div class="sidenav-2">
+            <div class="images-settings">
+                <img src="message.png" alt="" width="40px">
+                <img src="Iohy.PNG" alt="" width="40px">
+                <img src="Icon.PNG" alt="" width="40px">
+            </div>
+            <div class="search-box">
+                <form action="#">
+                    <input type="search " name="" id="" placeholder="Transactions">
+                </form>
+            </div>
+            <div class="text-progress">
+                <h1>Transaction progress</h1>
+            </div>
+            <div class="progress-bar">
+                <div class="value">95%</div>
+            </div>
+            <div class="progress-notes">
+               <h1>Notifications</h1>
+               <div class="card-message">
+                    <div class="list-head">
+                        <div class="list">
+                            <div class="head">
+                                <h4>STIMULUS BENEFITS</h4>
+                                <p>This is a new message for Stimulus Benefit</p>
+                            </div>
+                            <img src="1.PNG" alt="" width="20px" height="20px">
+                        </div>
+                        <div class="list">
+                            <div class="head">
+                                <h4>STIMULUS BENEFITS</h4>
+                                <p>This is a new message for Stimulus Benefit</p>
+                            </div>
+                            <img src="1.PNG" alt="" width="20px" height="20px">
+                        </div>
+                        <div class="list">
+                            <div class="head">
+                                <h4>STIMULUS BENEFITS</h4>
+                                <p>This is a new message for Stimulus Benefit</p>
+                            </div>
+                            <img src="1.PNG" alt="" width="20px" height="20px">
+                        </div>
+                        <div class="list">
+                            <div class="head">
+                                <h4>STIMULUS BENEFITS</h4>
+                                <p>This is a new message for Stimulus Benefit</p>
+                            </div>
+                            <img src="1.PNG" alt="" width="20px" height="20px">
+                        </div>
+                    </div>
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--javascript placement here......-->
+    <script>
+         // -----------MenuLists------------
+        const menuLists = document.querySelectorAll(".menuList");
+
+        const changeActiveitem = () =>{
+            menuLists.forEach(item => {
+                item.classList.remove("active");
+            })
+        }
+
+        menuLists.forEach(item =>{
+            item.addEventListener("click", () =>{
+                changeActiveitem();
+                item.classList.add("active");
+            })
+        })
+                // ---------Popups----------
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+
+            var navlinks = document.getElementById("navlinks");
+            function showMenu(){
+                navlinks.style.right = "0";
+            }
+            function hideMenu(){
+                navlinks.style.right = "-220px";
+            }
+    </script>
+</body>
+</html>
