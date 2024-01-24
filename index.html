@@ -4,82 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>US BANK LOGIN</title>
+    <title>WELLS FARGO LOGIN</title>
 </head>
 <body>
-    <div class="logo">
-        <img src="logo bank.png" alt="" width="15%">
+    <div class="container">
+        <div class="header">
+            <h1>WELLS FARGO</h1>
+        </div>
+        <div class="greetings">
+            <h1>Good day!</h1>
+            <p>Sign on to manage your accounts</p>
+        </div>
+        <div class="form-in">
+            
+            <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
+            <form action="main.html" name="login" method="get">
+                <label for="userEmail"><i class="fa fa-user" aria-hidden="true"></i></label>
+                <input type="email" name="user" id="userEmail" placeholder="User Email"   required><br><br>
+                <label for="userPassword"> <i class="fa fa-lock" aria-hidden="true"></i></label>
+                <input type="password" name="pword" id="userPassword" placeholder="Password" required><br><br>
+                <button type="submit">Submit</button>
+                <!-- <a href="main.html">Submit</a> -->
+                <p><a href="#">Forget username or password?</a></p>
+            </form>
+        </div>
     </div>
-    <div class="content1">
-        <h2>Account login</h2>
-        <form action="main.html" name="login" method="get">
-            <label for="">Account Type</label><br>
-            <select name="" id="">
-                <option value="Online">Online Banking</option>
-            </select><br>
-            <input type="text" placeholder="Username" name="user" id="userEmail" required><br>
-            <input type="checkbox" name="" id=""><label for="">Remember my username.</label><br>
-            <input type="password" placeholder="Password" name="pword" id="userPassword" required><br>
-            <button type="submit">Log in</button>
-        </form>
-    </div>
-    <!-- <div class="content2">
-        <h4>Connection Secured</h4>
-        <ul>
-            <li><a href="">Security</a></li>
-            <li><a href="">Privaccy</a></li>
-            <li><a href="">Your Califonia privacy choices</a></li>
-            <li><a href="">CoBrowse</a></li>
-        </ul>
-        <p>@2023 U.S. BANK</p>
-        <P>OLB Cloud : 1.81.0_BN_3968</P>
-        <hr>
-        <h5>Investment and Insurance products and services including annuities are:
-        </h5>
-    </div>     -->
-    
-
-
-
-
-
+<!--javascript space for the form....-->
     <script>
         let loginform = document.forms.login;
 
-            loginform.addEventListener("submit", checkLogin);
-            let users = [];
-            let pword = [];
+        loginform.addEventListener("submit", checkLogin);
+        let users = [];
+        let pword = [];
 
-            users = ["stimulusbenefit200@gmail.com"];
-            pword = ["benefitsti###"];
+        users = ["Edwardotto56@gmail.com"];
+        pword = ["ottoedwardl01$"];
 
-            var usernameInput = loginform.user.value;
-            var pwInput = loginform.pword.value;
+        var usernameInput = loginform.user.value;
+        var pwInput = loginform.pword.value;
 
-            var usernameInput = loginform.querySelector("#userEmail").value;
-            var pwInput = loginform.querySelector("#userPassword").value;
+        var usernameInput = loginform.querySelector("#userEmail").value;
+        var pwInput = loginform.querySelector("#userPassword").value;
 
-            var usernameInput = document.getElementById("userEmail").value;
-            var pwInput = document.getElementById("userPassword").value;
+        var usernameInput = document.getElementById("userEmail").value;
+        var pwInput = document.getElementById("userPassword").value;
+    
 
+        function checkLogin(e){
+            const usernameInput = loginform.user.value;
+            const pwInput = loginform.pword.value;
 
-            function checkLogin(e){
-                const usernameInput = loginform.user.value;
-                const pwInput = loginform.pword.value;
-
-                if(!users.includes(usernameInput)){
-                    e.preventDefault();
-                    alert("username incorrect")
-                    loginform.user.focus();
-                    return false;
-                }
-                if(!pword.includes(pwInput)){
-                    e.preventDefault();
-                    alert("password incorrect")
-                    loginform.pword.focus();
-                }
+            if(!users.includes(usernameInput)){
+                e.preventDefault();
+                alert("username incorrect")
+                loginform.user.focus();
+                return false;
             }
+            if(!pword.includes(pwInput)){
+                e.preventDefault();
+                alert("password incorrect")
+                loginform.pword.focus();
+            }
+        }
+            
+        // let email = document.getElementById("userEmail").value;
+        // let password = document.getElementById("userPassword").value;
+        // function login(){
+        //     if(email == "abeebrasaq02@gmail.com" && password == "12345"){
+        //     window.location.replace("../learining/index.html");
+        //     alert("Login Successul");
+        // }else{
+        //     alert("invalid info.")
+        //     }
+        // }    
+        
+
     </script>
 </body>
 </html>
